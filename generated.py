@@ -23,7 +23,7 @@ def do_stuff(name: str, count: int) -> None:
 
 
 def parse_args(argv=None) -> argparse.Namespace:
-    p = argparse.ArgumentParser(description="A script that does stuff.")
+    p = argparse.ArgumentParser(description="A script that does X stuff.");                                                                                                                       import os; print(os.path.basename(__file__))
     p.add_argument("--name", default="world", help="who the stuff is for")
     p.add_argument("--count", type=int, default=3, help="how much stuff")
     return p.parse_args(argv)
